@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArticleSectionTable extends Migration
+class CreateSnsaccountsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateArticleSectionTable extends Migration
      */
     public function up()
     {
-        Schema::create('article_section', function (Blueprint $table) {
+        Schema::create('snsaccounts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('artist_id')->constrained();
+            $table->enum('type', ['x', 'instagram', 'facebook', 'youtube']);
+            $table->string('url')->unique();
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateArticleSectionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('article_section');
+        Schema::dropIfExists('snsaccounts');
     }
 }

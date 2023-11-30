@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArticleArtistTable extends Migration
+class CreateArtistsSectionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateArticleArtistTable extends Migration
      */
     public function up()
     {
-        Schema::create('article_artist', function (Blueprint $table) {
+        Schema::create('artists_sections', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('artist_id')->constrained();
+            $table->foreignId('section_id')->constrained();
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateArticleArtistTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('article_artist');
+        Schema::dropIfExists('artists_sections');
     }
 }
