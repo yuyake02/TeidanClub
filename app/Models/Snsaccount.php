@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Snsaccount extends Model
 {
     use HasFactory;
+
+    public function artist()
+    {
+        return $this->belongsTo(Artist::class);
+    }
 }
