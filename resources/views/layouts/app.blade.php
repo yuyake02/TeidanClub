@@ -51,7 +51,7 @@
             <span><a href="#">Subscribe</a></span>
         </div>
     </header>
-    @yield('top')
+    @yield('content')
     <footer>
         <div class="footer-container">
             <div class="footer-content">
