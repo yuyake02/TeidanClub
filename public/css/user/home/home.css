@@ -1,0 +1,185 @@
+/* ここからTOPページ部分 */
+
+/* PickUp部分 */
+
+#pickup {
+  margin: 0 0 100px 0;
+}
+
+.pickup-container {
+  position: relative;
+}
+
+.pickup-content ul {
+  display: flex;
+  font-size: 1rem;
+  animation: moveLeft 18s linear infinite;
+}
+
+.pickup-content li {
+  margin-top: 120px;
+  /* margin-right: 20px; */
+}
+
+.pickup-content img {
+  width: 850px;
+  height: 700px;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-110%);
+  }
+}
+
+/* .pickup-content ul:hover {
+  animation-play-state: paused;
+} */
+
+.background-title {
+  position: absolute;
+  display: inline-block;
+  font-size: 23rem;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px black;
+  font-family: 'Noto Serif JP', serif;
+  z-index: 1;
+}
+
+.background-title p {
+  margin: 50px 0;
+}
+
+
+/* ここからNewBook部分 */
+
+#new-book {
+  margin: 100px 0px 100px 0;
+}
+
+.new-book-container {
+  display: flex;
+  margin: 150px 0 150px 50px;
+}
+
+.new-book-content {
+  position: relative;
+}
+
+.new-book-content img {
+  margin-top: 60px;
+  width: 700px;
+  height: 500px;
+}
+
+.new-book-content img:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.new-book-content img:last-child {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.new-book-title {
+  position: relative;
+  display: inline-block;
+  margin: auto 100px;
+  font-size: 12rem;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px black;
+  font-family: 'Roboto', sans-serif;
+  z-index: 1;
+}
+
+/* ここからBack Number部分 */
+
+#back-number {
+  margin: 100px 0px 100px 0;
+}
+
+h2 {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.back-number-container {
+  display: flex;
+  justify-content: center;
+}
+
+.back-number-content {
+  margin: auto 0;
+  padding: 100px;
+  font-size: 1.2rem;
+  max-width: 100%;
+}
+
+.back-number-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-number-content li {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.read-more-container {
+  text-align: right;
+  margin: 20px;
+}
+
+.read-more {
+  position: relative;
+  display: inline-block;
+}
+
+.allow {
+  font-size: 2.5rem;
+}
+
+
+/* ここからArtists部分 */
+
+#artists {
+  margin: 100px 0px 100px 0;
+}
+
+.artists-container {
+  display: flex;
+  justify-content: center;
+}
+
+.artists-content {
+  margin: auto 0;
+  padding: 100px;
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+
+.artists-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artists-content li {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.artists-contents img {
+  width: auto;
+  height: auto;
+}
