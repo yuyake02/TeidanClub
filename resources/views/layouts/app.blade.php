@@ -7,7 +7,7 @@
     <meta name="description" content="ページの内容を表す文章" />
     <title>The Teidan Club</title>
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/layouts/app.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
@@ -34,15 +34,15 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
-                {{-- <ul class="menu" id="menu">
+                <ul class="menu" id="menu">
                     <li><a href="/">TOP</a></li>
-                    <li><a href="#">BACK NUMBER</a></li>
-                    <li><a href="#">ARTISTS</a></li>
+                    <li><a href="{{ route('articles') }}">BACK NUMBER</a></li>
+                    <li><a href="{{ route('artists') }}">ARTISTS</a></li>
                     <li><a href="#">X</a></li>
                     <li><a href="#">Instagram</a></li>
                     <li><a href="#">YouTube</a></li>
-                    <li><a href="#">MY PEGE</a></li>
-                </ul> --}}
+                    <li><a href="{{ route('mypage') }}">MY PEGE</a></li>
+                </ul>
             </div>
             <h1>The Teidan Club</h1>
         </div>
